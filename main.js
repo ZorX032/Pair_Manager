@@ -6,7 +6,7 @@ let sortByValueBtn = document.getElementById('sortByValue');
 let list = document.getElementById('lister');
 let hint = document.getElementsByClassName('hintText')[0];
 
-
+//Функція затримки на видалення повідомлення в hint
 function timeOut() {
     setTimeout(() => hint.innerText = '', 3000);
 }
@@ -28,7 +28,7 @@ function addItem() {
         return;
     }
 
-    if (/^[а-яА-Яa-zA-Z0-9ёії= ]+$/.test(input.value)) { // Перевірка на заборонені символи. Доступні усі букви, цифри, та пробіл.
+    if (/^[а-яА-Яa-zA-Z0-9ёіїЁІЇ= ]+$/.test(input.value)) { // Перевірка на заборонені символи. Доступні усі букви, цифри, та пробіл.
         let split = input.value.split('='); // розділення введеного в input через знак "="
 
         if (split.length === 1) {
