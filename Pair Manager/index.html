@@ -1,0 +1,42 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport"
+        content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Менеджер пар</title>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/style-0-480.css">
+  <link rel="stylesheet" href="css/style-481-768.css">
+  <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
+</head>
+<body>
+<section>
+  <div class="wrapper">
+    <!--------------------- Блок вводу даних та кнопки додати-------------------->
+    <div class="inputWrapper">
+      <input type="text" id="inputValue" placeholder="Ім'я = значення">
+      <button id="addButton">Додати</button>
+    </div>
+    <!--------------------- Блок списку------------------------------------------>
+    <div class="selectWrapper">
+      <div><p class="hintText"></p></div>
+      <select id="lister" multiple></select>
+    </div>
+    <!--------------------- Блок кнопок------------------------------------------>
+    <div class="buttonsWrapper">
+      <button id="sortByName">Сортувати за ім'ям</button>
+      <button id="sortByValue">Сортувати за значенням</button>
+      <button id="deleteButton">Видалити</button>
+    </div>
+  </div>
+
+
+</section>
+
+<script src="main.js"></script>
+</body>
+</html>

@@ -1,0 +1,53 @@
+@media screen and (max-width: 768px) {
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+    .wrapper {
+        width: 100%;
+        height: 100%;
+        padding: 10px;
+        box-sizing: border-box;
+
+    }
+
+    .inputWrapper {
+        width: 100%;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 10px;
+    }
+
+    input {
+        width: 100%;
+        height: 40px;
+    }
+
+    #addButton {
+        width: 100%;
+        height: 40px;
+    }
+
+    .selectWrapper {
+        width: 100%;
+        margin: 20px 0;
+    }
+
+    select {
+        width: 100%;
+        height: 300px;
+    }
+
+    .buttonsWrapper {
+        flex-direction: column;
+        gap: 5px;
+    }
+
+    #sortByName, #sortByValue, #deleteButton {
+        width: 100%;
+        height: 35px;
+        font-size: 14px;
+        margin: 0;
+    }
+}
